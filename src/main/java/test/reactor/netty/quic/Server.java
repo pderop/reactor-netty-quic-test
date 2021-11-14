@@ -33,7 +33,7 @@ public class Server {
                         .handleStream((in, out) -> out.send(in.receive().retain()))
                         .bindNow();
 
-        System.ou.println("Server listening");
+        System.out.println("Server listening");
 
         server.onDispose()
                 .block();
